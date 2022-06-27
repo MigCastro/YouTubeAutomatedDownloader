@@ -1,7 +1,7 @@
 # YouTubeAutomatedDownloader
 An automated tool that allows you to download YouTube Videos/Audios from a list.
 
-What to do:
+What to do:    
 For Python2 : pip install pytube
 For Python3 : pip3 install pytube
 For pyube3 : pip install pytube3
