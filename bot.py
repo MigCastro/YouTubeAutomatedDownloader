@@ -1,8 +1,8 @@
 from pytube import YouTube
 import os
 
-#Opens your /links.txt file.
-linkFile = open("/Users/miguelcastro/Documents/YouTubeMP3Automation/links.txt", "r")
+#Opens your links.txt file.
+linkFile = open("links.txt", "r")
 print("Welcome to the YouTube Video/Audio downloader.")
 
 #Input the media you would like to download.
