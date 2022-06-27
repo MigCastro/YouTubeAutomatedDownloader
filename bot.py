@@ -48,4 +48,3 @@ elif media == str("Video") or media == str("video"):
 #If NOT Video or Audio, error.
 else:
     print("Incorrect response")
-
