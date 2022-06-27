@@ -5,14 +5,15 @@ import os
 linkFile = open("/Users/miguelcastro/Documents/YouTubeMP3Automation/links.txt", "r")
 print("Welcome to the YouTube Video/Audio downloader.")
 
-#This is where you type in your destination folder for the media you want to download.
-print("Enter the destination address (leave blank to save in current directory)")
-destination = str(input(" ")) or '.'
-
 #Input the media you would like to download.
 print("Please enter the type of media you will be downloading.")
 print("Video or Audio?")
-media = str(input(" "))
+media = str(input(""))
+
+#This is where you type in your destination folder for the media you want to download.
+print("Enter the destination address (leave blank to save in current directory)")
+destination = str(input("")) or '.'
+
 #Audio encoder
 if media == str("Audio") or media == str("audio"):
     print("Downloading Audio.")
@@ -31,7 +32,7 @@ if media == str("Audio") or media == str("audio"):
 
 #Video encoder
 elif media == str("Video") or media == str("video"):
-    print("Downloading Video.")
+    print("Downloading Videos.")
     for line in linkFile:
         for line in line.split():
             yt = YouTube(str(line.split()))
